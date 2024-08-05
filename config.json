@@ -1,0 +1,10 @@
+{
+    "account": "pitneybowes",
+    "user": "Atul.Bansal@pb.com",
+    "authenticator": "externalbrowser",
+    "role": "FUSION_SHIPPING_LOAD_ROLE",
+    "warehouse": "FDR_GLOBAL_DWH",
+    "database": "FUSION_SHIPPING_DB",
+    "schema": "CS_BI_SCHEMA",
+    "region": "us-east-1"   
+}

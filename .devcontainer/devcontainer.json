@@ -1,0 +1,35 @@
+{
+  "name": "EMR",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "RELEASE": "emr-6.13.0",
+      "RELEASE_TAG": "latest",
+      "REGION": "us-west-1",
+      "EMR_ACCOUNT_ID": "608033475327"
+    }
+  },
+  "containerEnv": {
+    "AWS_EC2_METADATA_DISABLED": "true",
+    "AWS_REGION": "us-west-1"
+  },
+  "remoteEnv": {
+    "PYTHONPATH": "/usr/lib/spark/python/lib/py4j-src.zip:/usr/lib/spark/python",
+    "PATH": "${containerEnv:PATH}:/home/hadoop/.local/bin"
+  },
+  "postStartCommand": "sudo /usr/lib/spark/sbin/start-history-server.sh",
+  "settings": {
+    "python.defaultInterpreterPath:": "python3"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "AmazonEMR.emr-tools"
+  ],
+  "forwardPorts": [
+    18080
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/hadoop/.aws,type=bind"
+  ]
+}

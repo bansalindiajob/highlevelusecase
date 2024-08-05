@@ -1,0 +1,12 @@
+{
+    "sqlite": {
+      "database": "./dataset/Food.sqlite"
+    },
+    "mssql": {
+      "server": "localhost",
+      "database": "MakeSAAS",
+      "username": "sa",
+      "password": "Password1"
+    }
+  }
+  

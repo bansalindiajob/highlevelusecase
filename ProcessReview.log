@@ -1,0 +1,8 @@
+2024-08-05 15:29:05,388 - INFO - Connected to SQLite database
+2024-08-05 15:29:05,469 - INFO - Connected to MS SQL database
+2024-08-05 15:29:05,476 - INFO - Data read from SQLite database
+2024-08-05 15:29:05,479 - INFO - Data normalization and cleaning completed
+2024-08-05 15:29:05,483 - INFO - Table checked/created in MS SQL database
+2024-08-05 15:29:05,534 - ERROR - Error processing data: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK__Reviews__3214EC07545F7525'. Cannot insert duplicate key in object 'dbo.Reviews'. The duplicate key value is (1). (2627) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2024-08-05 15:29:05,535 - INFO - Database connections closed
+2024-08-05 15:29:05,535 - INFO - Total runtime: 0:00:00.147845
